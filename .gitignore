@@ -1,0 +1,11 @@
+.idea
+logs_bpi_12_w
+logs_helpdesk
+temp.py
+src/Models/__pycashe__/*
+*/__pycache__/*
+*.pyc
+CS
+TLSTM
+temp.py
+Saved Items
