@@ -101,12 +101,25 @@ class Preprocess:
 
     """
 
-    def __init__(self, divisor=0,divisor2=0,
-                 divisor3=0,caseids=[],lines=[],
-                 timeseqs=[],timeseqs2=[],timeseqs3=[],
-                 timeseqs3_test=[],timeseqs4=[],numlines=0,
-                 ascii_offset=161,maxlen=0,fold3=0,
-                 fold3_c='',fold3_t=0,fold3_t2=0,fold3_t3=0,fold3_t4=0):
+    def __init__(self, divisor=0,
+                 divisor2=0,
+                 divisor3=0,
+                 caseids=[],
+                 lines=[],
+                 timeseqs=[],
+                 timeseqs2=[],
+                 timeseqs3=[],
+                 timeseqs3_test=[],
+                 timeseqs4=[],
+                 numlines=0,
+                 ascii_offset=161,
+                 maxlen=0,
+                 fold3=0,
+                 fold3_c='',
+                 fold3_t=0,
+                 fold3_t2=0,
+                 fold3_t3=0,
+                 fold3_t4=0):
 
 
         """""

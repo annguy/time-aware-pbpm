@@ -54,9 +54,12 @@ class HyperparameterTune:
     """
 
 
-    def __init__(self,HP_NUM_UNITS = [],HP_DROPOUT = [],
-        HP_OPTIMIZER = [],HP_LEARNING_RATE = [],
-        name='',model_choice=''):
+    def __init__(self,HP_NUM_UNITS = [],
+                 HP_DROPOUT = [],
+                 HP_OPTIMIZER = [],
+                 HP_LEARNING_RATE = [],
+                 name='',
+                 model_choice=''):
     
         """
         

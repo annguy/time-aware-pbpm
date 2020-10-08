@@ -20,11 +20,11 @@ class Nextstep_eval:
     Attributes
     -------------------------
 
-    self.file: str
+    filename: str
         name of the  complete file
-    self.df: dataframe
+    df: dataframe
         data of the test results
-    self.name: str
+    name: str
         only name of the file
 
     Methods
@@ -40,14 +40,15 @@ class Nextstep_eval:
       
     """
 
-    def __init__(self,filename,df=0,name='',ext=''):
+    def __init__(self,filename,
+                 df=0,
+                 name='',
+                 ext=''):
         """  
         Parameters
         -------------------------
         filename: str
             user input for name of the file
-        file: str
-            name of the  complete file
         df: dataframe
             data of the test results
         name: str

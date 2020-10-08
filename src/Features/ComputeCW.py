@@ -10,16 +10,19 @@ class ComputeCW:
     ComputeCW
     ............
     Computes class weights of activity prediction for the different event logs
-    
-    Attributes
-    --------------
-    self.class_weights: dict
-        computed class_weights
-        
+
+
     Methods
     -----------
-    compute_class_weight(self,spamread)
+    compute_class_weight(self, spamread)
         computes the class weights
+
+        Returns
+        ----------
+        class_weights: dict
+        computed class_weights
+
+
 
     """
 
@@ -29,7 +32,7 @@ class ComputeCW:
 
         """
        
-    def compute_class_weight(self,spamread):
+    def compute_class_weight(self, spamread):
         """
         Parameters
         -------------

@@ -44,8 +44,10 @@ class Datahandler:
     """
    
 
-    def __init__(self,spamread=0,spamreader=0,
-                 name='',ext=''):
+    def __init__(self,spamread=0,
+                 spamreader=0,
+                 name='',
+                 ext=''):
 
         self.spamread = spamread
         self.spamreader= spamreader

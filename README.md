@@ -6,19 +6,36 @@ Department of Computer Science Friedrich-Alexander-University Erlangen-Nuremberg
 
 
 Getting Started
-====
+
 1. Clone this repo 
 
-2. Create new environment using the environment.yml --> 'conda env create -f environment.yml' 
+2. Create new environment using the environment.yml 
+```bash
+ 'conda env create -f environment.yml' 
+```
 [Link](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 
-3. Install src in the new environment -->'pip install -e.'
+3. Install src in the new environment 
+```bash
+'pip install -e.'
+```
 
-4. Hyperparameter_Tuning, training, test, evaluation: Run main.py 
+4. Hyperparameter_Tuning, training, test, evaluation
+```bash
+'python main.py' 
+```
+![alt text](https://code.siemens.com/shs-bda/pbpm/-/tree/github/notebooks/screen.png?raw=true)
 
-5. Best hyperparameters list for each model: Run  Gridsearch.py 
+5. Best hyperparameters list for each model
+```bash
+'python Gridsearch.py' 
+```
 
-6. Validation loss plots for the complete hyperparameter tuning: Run Plot_hyper.py 
+6. Validation loss plots for the complete hyperparameter tuning
+```bash
+'python Plot_hyper.py' 
+```
+
 
 
 

@@ -36,42 +36,42 @@ class NextStep:
     Attributes
     ----------------------
       
-        self.divisor: float
+        divisor: float
             average time between current and first events
-        self.divisor2: float
+        divisor2: float
             average time between current and first events
-        self.lines: list
+        lines: list
             these are all the activity seq
-        self.char_indices : dict
+        char_indices : dict
             ascii coded characters of the unique activities to integer indices
-        self.indices_char: dict
-            integer indices to ascii coded characters of the unique activities 
-        self.target_char_indices: dict
+        indices_char: dict
+            integer indices to ascii coded characters of the unique activities
+        target_char_indices: dict
             ascii coded characters of the target unique activities to integer indices
             (target includes one excess activity '!' case end)
-        self.target_indices_char: dict
-            integer indices to ascii coded characters of the target unique activities    
-        self.lines: list 
-             ActivityIDs 
-        self.lines_t: list
-            differences between two events 
-        self.lines_t2: list
+        target_indices_char: dict
+            integer indices to ascii coded characters of the target unique activities
+        lines: list
+             ActivityIDs
+        lines_t: list
+            differences between two events
+        lines_t2: list
             differences between the current and first of test_set
-        self.lines_t3 : list
+        lines_t3 : list
             Midnight time
-        self.lines_t4 : list
+        lines_t4 : list
             Day of the week
-        self.one_ahead_gt : list
+        one_ahead_gt : list
             helper variable to predict one ahead
-        self.one_ahead_pred : list
+        one_ahead_pred : list
             helper variable to predict one ahead
-        self.two_ahead_gt : list
+        two_ahead_gt : list
             helper variable to predict two ahead
-        self.two_ahead_pred : list
+        two_ahead_pred : list
             helper variable to predict two ahead
-        self.three_ahead_gt :list
+        three_ahead_gt :list
             helper variable to predict three ahead
-        self.three_ahead_pred :list
+        three_ahead_pred :list
             helper variable to predict three ahead
 
            
@@ -96,7 +96,9 @@ class NextStep:
     def __init__(self,lines,caseids,lines_t,lines_t2,
                  lines_t3,maxlen,eventlog,chars,target_chars,
                  divisor,divisor2,target_indices_char,
-                 char_indices,model_name,num_features):
+                 char_indices,model_name,num_features,one_ahead_gt = [],
+                 one_ahead_pred = [],two_ahead_gt = [],two_ahead_pred = [],
+                 three_ahead_gt = [],three_ahead_pred = []):
         """
         Parameters
         -----------
@@ -126,19 +128,17 @@ class NextStep:
             Midnight time
         lines_t4 : list
             Day of the week
-
-        ****Helper Variables****
-        self.one_ahead_gt : list
+        one_ahead_gt : list
             helper variable to predict one ahead
-        self.one_ahead_pred : list
+        one_ahead_pred : list
             helper variable to predict one ahead
-        self.two_ahead_gt : list
+        two_ahead_gt : list
             helper variable to predict two ahead
-        self.two_ahead_pred : list
+        two_ahead_pred : list
             helper variable to predict two ahead
-        self.three_ahead_gt :list
+        three_ahead_gt :list
             helper variable to predict three ahead
-        self.three_ahead_pred :list
+        three_ahead_pred :list
             helper variable to predict three ahead
     
         """
@@ -157,19 +157,17 @@ class NextStep:
         self.target_indices_char=target_indices_char
         self.char_indices=char_indices
         self.model_name=model_name
-        self.one_ahead_gt = []
-        self.one_ahead_pred = []
-
-        self.two_ahead_gt = []
-        self.two_ahead_pred = []
-
-        self.three_ahead_gt = []
-        self.three_ahead_pred = []
+        self.one_ahead_gt = one_ahead_gt
+        self.one_ahead_pred = one_ahead_pred
+        self.two_ahead_gt = two_ahead_gt
+        self.two_ahead_pred = two_ahead_pred
+        self.three_ahead_gt = three_ahead_gt
+        self.three_ahead_pred = three_ahead_pred
         self.num_features=num_features
         
       
      # define helper functions
-    def encode(self,sentence, times, times3,num_features):
+    def encode(self,sentence, times, times3, num_features):
         """
         Encodes the test_set event log to a predictable shape
         
@@ -230,7 +228,7 @@ class NextStep:
         return [X, dts]
         
         
-    def getSymbol(self,predictions):
+    def getSymbol(self, predictions):
         """
         Encodes predicted values to ascii_coded activities
        
