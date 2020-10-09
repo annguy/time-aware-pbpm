@@ -5,7 +5,7 @@ Department of Computer Science Friedrich-Alexander-University Erlangen-Nuremberg
 
 
 ## Citation and Contact
-You find a PDF of the paper (accapter at Ml4PM workshop @ ICPM2020)
+You find a PDF of the paper (accapted at [Ml4PM](http://ml4pm2020.di.unimi.it/) workshop @ ICPM2020)
 [https://arxiv.org/abs/2010.00889](https://arxiv.org/abs/2010.00889).
 
 If you use our work, please also cite the paper:
