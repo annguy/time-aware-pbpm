@@ -1,11 +1,48 @@
-﻿Time Matters: Time-Aware LSTMs forPredictive Business Process Monitoring
+# Time Matters: Time-Aware LSTMs forPredictive Business Process Monitoring
 ==============================
 This project was conducted at the [Machine Learning and Data Analytics Lab](https://www.mad.tf.fau.de/ ) (CS 14),
 Department of Computer Science Friedrich-Alexander-University Erlangen-Nuremberg (FAU) 
 
 
 
-Getting Started
+## Citation and Contact
+You find a PDF of the paper (accapter at Ml4PM workshop @ ICPM2020)
+[https://arxiv.org/abs/2010.00889](https://arxiv.org/abs/2010.00889).
+
+If you use our work, please also cite the paper:
+```
+@misc{nguyen2020time,
+      title={Time Matters: Time-Aware LSTMs for Predictive Business Process Monitoring}, 
+      author={An Nguyen and Srijeet Chatterjee and Sven Weinzierl and Leo Schwinn and Martin Matzner and Bjoern Eskofier},
+      year={2020},
+      eprint={2010.00889},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+
+If you would like to get in touch, please contact [an.nguyen@fau.de](mailto:an.nguyen@fau.de).
+
+
+## Abstract
+
+> > Predictive business process monitoring (PBPM) aims to predict future process 
+> > behavior during ongoing process executions based on event log data. Especially, 
+> > techniques for the next activity and timestamp prediction can help to improve the 
+> > performance of operational business processes. Recently, many PBPM solutions based
+> > on deep learning were proposed by researchers. Due to the sequential nature of event 
+> > log data, a common choice is to apply recurrent neural networks with long short-term memory (LSTM) cells. 
+> > We argue, that the elapsed time between events is informative. However, current PBPM techniques
+> > mainly use 'vanilla' LSTM cells and hand-crafted time-related control flow features. 
+> > To better model the time dependencies between events, we propose a new PBPM technique based 
+> > on time-aware LSTM (T-LSTM) cells. T-LSTM cells incorporate the elapsed time between consecutive
+> > events inherently to adjust the cell memory. Furthermore, we introduce cost-sensitive learning
+> > to account for the common class imbalance in event logs. Our experiments on publicly available
+> > benchmark event logs indicate the effectiveness of the introduced techniques.
+> > Getting Started
+
+
+## Getting started
 
 1. Clone this repo 
 
@@ -36,9 +73,6 @@ Getting Started
 'python Plot_hyper.py' 
 ```
 
-
-
-
 Contributors
 ------
 [An Nguyen](https://www.mad.tf.fau.de/person/an-nguyen/) 
@@ -46,7 +80,7 @@ Contributors
 [Srijeet Chatterjee](https://www.linkedin.com/in/srijeet-chatterjee-43845577/) 
 
 
-Project Organization
+## Project Organization
 ------------
 
     ├── LICENSE
@@ -112,4 +146,6 @@ Project Organization
 
 
 --------
+
+
 
