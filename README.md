@@ -60,7 +60,6 @@ If you would like to get in touch, please contact [an.nguyen@fau.de](mailto:an.n
 ```bash
 'python main.py' 
 ```
-![alt text](https://code.siemens.com/shs-bda/pbpm/-/tree/github/notebooks/screen.png?raw=true)
 
 5. Best hyperparameters list for each model
 ```bash
