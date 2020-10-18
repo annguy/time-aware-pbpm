@@ -19,6 +19,7 @@ If you use our work, please also cite the paper:
       primaryClass={cs.LG}
 }
 ```
+Watch the presentation on [Youtube](https://www.youtube.com/watch?v=LQNj3ZsQzWc&feature=youtu.be&t=1001&ab_channel=ICPM2020)
 
 If you would like to get in touch, please contact [an.nguyen@fau.de](mailto:an.nguyen@fau.de).
 
