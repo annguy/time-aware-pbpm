@@ -1,4 +1,4 @@
-# Time Matters: Time-Aware LSTMs forPredictive Business Process Monitoring
+# Time Matters: Time-Aware LSTMs for Predictive Business Process Monitoring
 This project was conducted at the [Machine Learning and Data Analytics Lab](https://www.mad.tf.fau.de/ ) (CS 14),
 Department of Computer Science Friedrich-Alexander-University Erlangen-Nuremberg (FAU) 
 
