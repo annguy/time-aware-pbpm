@@ -6,18 +6,18 @@ Department of Computer Science Friedrich-Alexander-University Erlangen-Nuremberg
 
 ## Citation and Contact
 You find a PDF of the paper (accapted at [Ml4PM](http://ml4pm2020.di.unimi.it/) workshop @ ICPM2020)
-[https://arxiv.org/abs/2010.00889](https://arxiv.org/abs/2010.00889).
+[https://doi.org/10.1007/978-3-030-72693-5_9](https://doi.org/10.1007/978-3-030-72693-5_9).
 
 If you use our work, please also cite the paper:
 ```
-@misc{nguyen2020time,
-      title={Time Matters: Time-Aware LSTMs for Predictive Business Process Monitoring}, 
-      author={An Nguyen and Srijeet Chatterjee and Sven Weinzierl and Leo Schwinn and Martin Matzner and Bjoern Eskofier},
-      year={2020},
-      eprint={2010.00889},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
+@inproceedings{Nguyen_Chatterjee_Weinzierl_Schwinn_Matzner_Eskofier_2021, 
+author={Nguyen, An and Chatterjee, Srijeet and Weinzierl, Sven and Schwinn, Leo and Matzner, Martin and Eskofier, Bjoern},
+title={Time Matters: Time-Aware LSTMs for Predictive Business Process Monitoring}, 
+DOI={10.1007/978-3-030-72693-5_9}, 
+booktitle={Process Mining Workshops}, 
+publisher={Springer International Publishing}, 
+year={2021}, 
+pages={112–123}}
 ```
 Watch the presentation on [Youtube](https://www.youtube.com/watch?v=LQNj3ZsQzWc&feature=youtu.be&t=1001&ab_channel=ICPM2020)
 
